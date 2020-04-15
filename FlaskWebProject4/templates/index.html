@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <title>Select Options</title>
+    <style>
+        body {
+            background: url("F:/Meethi Folder/COLLEGE/COMPETITIONS/Sidh Competition/nmims_logo.png");
+            background-position: 515px 330px;
+            background-repeat: no-repeat;
+            background-size: 15%;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
+        .button {
+            position: absolute;
+            left: 570px;
+            background-color: #A9A9A9;
+            font-size: 30px;
+            top: 35%;
+        }
+
+        form {
+            display: inline-block
+        }
+
+        .ex {
+            margin: auto;
+            width: 90%;
+            padding: 40px;
+            border: outset;
+        }
+
+        select {
+            display: inline-block;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .ey {
+            display: inline-block;
+            padding: 40px;
+        }
+
+        .gap {
+            clear: both;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ex">
+        <form method="POST" action="{{ url_for('hello')}}">
+            Select Programme:
+            <select id= "programme" name="programme">
+                <option value="None">Select Programme</option>
+                <option value="BTech">BTech</option>
+                <option value="MBATech">MBATech</option>
+                <option value="Integrated">BTech Integrated</option>
+                <option value="MTech">MTech</option>
+            </select>
+            Select Course:
+            <select id="course" name="course">
+                <option value="None.None">Select Course</option>
+                <option value="BTech.Computer Science">Computer Science</option>
+                <option value="BTech.CS-BS">CS-BS</option>
+                <option value="BTech.Data Science">Data Science</option>
+                <option value="BTech.Information Technology">Information Technology</option>
+                <option value="BTech.Mechanical">Mechanical</option>
+                <option value="BTech.EXTC">EXTC</option>
+                <option value="BTech.Mechatronics">Mechatronics</option>
+                <option value="BTech.Civil">Civil</option>
+
+                <option value="MBATech.Computer Science">Computer Science</option>
+                <option value="MBATech.Information Technology">Information Technology</option>
+                <option value="MBATech.Mechanical">Mechanical</option>
+                <option value="MBATech.EXTC">EXTC</option>
+                <option value="MBATech.Civil">Civil</option>
+                <option value="MBATech.Chemical">Chemical</option>
+
+                <option value="MTech.Computer Science">Computer Science</option>
+                <option value="MTech.Data Science">Data Science</option>
+                <option value="MTech.Artificial Intelligence">Artificial Intelligence</option>
+                <option value="MTech.Industrial Automation">Industrial Automation</option>
+                <option value="MTech.EXTC">EXTC</option>
+
+                <option value="Integrated.Computer Science">Computer Science</option>
+                <option value="Integrated.EXTC">EXTC</option>
+                <option value="Integrated.Mechanical">Mechanical</option>
+                <option value="Integrated.Civil">Civil</option>
+            </select>
+
+            Select Year:
+            <select id="year" name="year">
+                <option value="None.None">Select Course</option>
+                <option value="BTech.Computer Science.First Year">First Year</option>
+                <option value="BTech.Computer Science.Second Year">Second Year</option>
+                <option value="BTech.Computer Science.Third Year">Third Year</option>
+                <option value="BTech.Computer Science.Fourth Year">Fourth Year</option>
+                <option value="BTech.CS-BS.First Year">First Year</option>
+                <option value="BTech.Data Science.First Year">First Year</option>
+                <option value="BTech.Data Science.Second Year">Second Year</option>
+                <option value="BTech.Data Science.Third Year">Third Year</option>
+                <option value="BTech.Information Technology.First Year>">First Year</option>
+                <option value="BTech.Information Technology.Second Year">Second Year</option>
+                <option value="BTech.Information Technology.Third Year">Third Year</option>
+                <option value="BTech.Information Technology.Fourth Year">Fourth Year</option>
+                <option value="BTech.EXTC.First Year>">First Year</option>
+                <option value="BTech.EXTC.Second Year">Second Year</option>
+                <option value="BTech.EXTC.Third Year">Third Year</option>
+                <option value="BTech.EXTC.Fourth Year">Fourth Year</option>
+                <option value="BTech.Mechanical.First Year>">First Year</option>
+                <option value="BTech.Mechanical.Second Year">Second Year</option>
+                <option value="BTech.Mechanical.Third Year">Third Year</option>
+                <option value="BTech.Mechanical.Fourth Year">Fourth Year</option>
+                <option value="BTech.Mechatronics.First Year>">First Year</option>
+                <option value="BTech.Mechatronics.Second Year">Second Year</option>
+                <option value="BTech.Mechatronics.Third Year">Third Year</option>
+                <option value="BTech.Mechatronics.Fourth Year">Fourth Year</option>
+                <option value="BTech.Civil.First Year>">First Year</option>
+                <option value="BTech.Civil.Second Year">Second Year</option>
+                <option value="BTech.Civil.Third Year">Third Year</option>
+                <option value="BTech.Civil.Fourth Year">Fourth Year</option>
+
+                <option value="MBATech.Computer Science.First Year">First Year</option>
+                <option value="MBATech.Computer Science.Second Year">Second Year</option>
+                <option value="MBATech.Computer Science.Third Year">Third Year</option>
+                <option value="MBATech.Computer Science.Fourth Year">Fourth Year</option>
+                <option value="MBATech.Computer Science.Fifth Year">Fifth Year</option>
+                <option value="MBATech.Information Technology.First Year>">First Year</option>
+                <option value="MBATech.Information Technology.Second Year">Second Year</option>
+                <option value="MBATech.Information Technology.Third Year">Third Year</option>
+                <option value="MBATech.Information Technology.Fourth Year">Fourth Year</option>
+                <option value="MBATech.Information Technology.Fifth Year">Fifth Year</option>
+                <option value="MBATech.EXTC.First Year>">First Year</option>
+                <option value="MBATech.EXTC.Second Year">Second Year</option>
+                <option value="MBATech.EXTC.Third Year">Third Year</option>
+                <option value="MBATech.EXTC.Fourth Year">Fourth Year</option>
+                <option value="MBATech.EXTC.Fifth Year">Fifth Year</option>
+                <option value="MBATech.Mechanical.First Year>">First Year</option>
+                <option value="MBATech.Mechanical.Second Year">Second Year</option>
+                <option value="MBATech.Mechanical.Third Year">Third Year</option>
+                <option value="MBATech.Mechanical.Fourth Year">Fourth Year</option>
+                <option value="MBATech.Mechanical.Fifth Year">Fifth Year</option>
+                <option value="MBATech.Civil.First Year>">First Year</option>
+                <option value="MBATech.Civil.Second Year">Second Year</option>
+                <option value="MBATech.Civil.Third Year">Third Year</option>
+                <option value="MBATech.Civil.Fourth Year">Fourth Year</option>
+                <option value="MBATech.Civil.Fifth Year">Fifth Year</option>
+                <option value="MBATech.Chemical.First Year>">First Year</option>
+                <option value="MBATech.Chemical.Second Year">Second Year</option>
+                <option value="MBATech.Chemical.Third Year">Third Year</option>
+                <option value="MBATech.Chemical.Fourth Year">Fourth Year</option>
+                <option value="MBATech.Chemical.Fifth Year">Fifth Year</option>
+
+                <option value="MTech.Computer Science.First Year">First Year</option>
+                <option value="MTech.Computer Science.Second Year">Second Year</option>
+                <option value="MTech.Artificial Intelligence.First Year">First Year</option>
+                <option value="MTech.Artificial Intelligence.Second Year">Second Year</option>
+                <option value="MTech.Industrial Automation.First Year">First Year</option>
+                <option value="MTech.Industrial Automation.Second Year">Second Year</option>
+                <option value="MTech.Data Science.First Year">First Year</option>
+                <option value="MTech.Data Science.Second Year">Second Year</option>
+                <option value="MTech.EXTC.First Year">First Year</option>
+                <option value="MTech.EXTC.Second Year">Second Year</option>
+
+                <option value="Integrated.Computer Science.First Year">First Year</option>
+                <option value="Integrated.Computer Science.Second Year">Second Year</option>
+                <option value="Integrated.Computer Science.Third Year">Third Year</option>
+                <option value="Integrated.Computer Science.Fourth Year">Fourth Year</option>
+                <option value="Integrated.Computer Science.Fifth Year">Fifth Year</option>
+                <option value="Integrated.Computer Science.Sixth Year">Sixth Year</option>
+                <option value="Integrated.Mechanical.First Year">First Year</option>
+                <option value="Integrated.Mechanical.Second Year">Second Year</option>
+                <option value="Integrated.Mechanical.Third Year">Third Year</option>
+                <option value="Integrated.Mechanical.Fourth Year">Fourth Year</option>
+                <option value="Integrated.Mechanical.Fifth Year">Fifth Year</option>
+                <option value="Integrated.Mechanical.Sixth Year">Sixth Year</option>
+                <option value="Integrated.EXTC.First Year">First Year</option>
+                <option value="Integrated.EXTC.Second Year">Second Year</option>
+                <option value="Integrated.EXTC.Third Year">Third Year</option>
+                <option value="Integrated.EXTC.Fourth Year">Fourth Year</option>
+                <option value="Integrated.EXTC.Fifth Year">Fifth Year</option>
+                <option value="Integrated.EXTC.Sixth Year">Sixth Year</option>
+                <option value="Integrated.Civil.First Year">First Year</option>
+                <option value="Integrated.Civil.Second Year">Second Year</option>
+                <option value="Integrated.Civil.Third Year">Third Year</option>
+                <option value="Integrated.Civil.Fourth Year">Fourth Year</option>
+                <option value="Integrated.Civil.Fifth Year">Fifth Year</option>
+                <option value="Integrated.Civil.Sixth Year">Sixth Year</option>
+
+            </select>
+
+            Select Hours:
+            <select name="hour" id="hour">
+                <option value="None">Select Time Slot</option>
+                <option value="1 hour">1 hour</option>
+                <option value="2 hours">2 hours</option>
+                <option value="3 hours">3 hours</option>
+                <option value="4 hours">4 hours</option>
+            </select>
+
+
+            <div class="wrapper">
+                <button class="button" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $("#course").val([]);
+        $('#course option').hide();
+
+        $("#programme").on("change", function () {
+            $('#course option')
+                .hide() // hide all
+                .filter('[value^="' + $(this).val() + '"]') // filter options with required value
+                .show(); // and show them
+
+            $("#course").val([]);
+        })
+
+
+        $("#year").val([]);
+        $('#year option').hide();
+
+        $("#course").on("change", function () {
+            $('#year option')
+                .hide() // hide all
+                .filter('[value^="' + $(this).val() + '"]') // filter options with required value
+                .show(); // and show them
+
+            $("#year").val([]);
+        })
+
+    </script>
+
+</body>
+
+</html>
